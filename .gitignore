@@ -1,0 +1,11 @@
+__pycache__
+logs/
+include/
+.idea/
+etc/
+Lib/
+share/
+*.pyc
+*.pyo
+pyvenv.cfg
+Scripts/

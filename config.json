@@ -1,0 +1,19 @@
+{
+  "colors": {
+    "info": "rgb(26, 188, 156)",
+    "update": "rgb(46, 204, 113)",
+    "success": "rgb(52, 152, 219)",
+    "warning": "rgb(241, 196, 15)",
+    "error": "rgb(231, 76, 60)",
+    "system": "rgb(155, 89, 182)"
+  },
+
+  "ActivityType": "watching",
+  "ActivityStatus": "online",
+  "ActivityText": "for ?help",
+  "prefix": "?",
+
+  "debug_guild_id": "1458827831688560896",
+  "log_channel_id": "1463227880007012404",
+  "farm_channel_id": "1463232710418895032"
+}
