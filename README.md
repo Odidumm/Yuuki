@@ -7,7 +7,7 @@
   />
 </p>
 
-<h1 align="center">Yuuki</h1>
+<h1 align="center">Yuuki | Work in Progress!</h1>
 
 <p align="center"><a href="#project-description">Project Description</a> - <a href="#key-features">Key Features</a> - <a href="#tech-stack">Tech Stack</a></p>
 
