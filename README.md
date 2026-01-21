@@ -2,8 +2,8 @@
   <img
     src="img/yuuki-nobackround.png"
     alt="YouTube Logo"
-    width="225"
-    height="150"
+    width="500"
+    height="500"
   />
 </p>
 
