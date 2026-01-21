@@ -1,7 +1,6 @@
 <p align="center">
   <img
     src="img/yuuki-nobackround.png"
-    alt="YouTube Logo"
     width="500"
     height="500"
   />
