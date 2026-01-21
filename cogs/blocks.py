@@ -115,6 +115,24 @@ class RequestModal(Modal):
             "✅ Deine Anfrage wurde erfolgreich gesendet!",
             ephemeral=True,
         )
+# Button to accept the request (With Notify the user that their request was accepted)
+#class AcceptView(View):
+#    def __init__(self, bot, request_id):
+#        super().__init__(timeout=None)
+#        self.bot = bot
+#        self.request_id = request_id
+#
+#    @discord.ui.button(label="Anfrage Akzeptieren", style=discord.ButtonStyle.success)
+#    async def accept_button(self, button: Button, interaction: discord.Interaction):
+#        await interaction.response.send_message(
+#            f"✅ Die Anfrage mit der ID {self.request_id} wurde akzeptiert.",
+#            ephemeral=True,
+#        )
+        # Notify the user that their request was accepted
+        # This part assumes you have a way to map request_id to user
+        # user = get_user_by_request_id(self.request_id)
+        # if user:
+        #     await user.send(f"Deine Anfrage mit der ID {self.request_id} wurde akzeptiert.")
 
 def setup(bot):
     bot.add_cog(Blocks(bot))
