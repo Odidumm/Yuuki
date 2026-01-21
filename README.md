@@ -1,18 +1,31 @@
-# Yuuki Discord Bot
+<p align="center">
+  <img
+    src="img/yuuki-nobackround.png"
+    alt="YouTube Logo"
+    width="225"
+    height="150"
+  />
+</p>
 
-Wir Lieben Fische <3>
+<h1 align="center">Yuuki</h1>
 
-MTQ2MzEyNDIxOTA2Mjc4NDE1Mw.GdYfrX.wThm031UmGpNdbMIB0ytUk_F7OF8Ps31v1IrYU
+<p align="center"><a href="#project-description">Project Description</a> - <a href="#key-features">Key Features</a> - <a href="#tech-stack">Tech Stack</a></p>
 
-## To do
+## Project Description
 
-### Slash Command für User | Ressource ist Leer
+Yuuki ist ein Discord-Bot, der in Python mit Pycord entwickelt wurde. Sie fungiert als Helferin und Managerin für unseren Minecraft-Server-Shop und unterstützt sowohl das Team als auch die Community. Yuuki übernimmt die Betreuung unserer Kunden und User, hilft bei Anfragen, organisiert Abläufe im Shop und sorgt für eine strukturierte und freundliche Kommunikation auf dem Discord-Server.
 
-User sollen Dazu in der Lage sein über einen Command bescheid zu geben das ein Item nicht mehr in Stock ist
+## Key Features
 
-## Slash Command für User | Request Custom Items and Amounts
+Yuuki dient als Shop-Management- und Support-System für einen Minecraft-Server. Sie verarbeitet Benutzerinteraktionen über Slash Commands, Buttons und Modals, verwaltet Support- und Shop-Tickets, unterstützt die Kundenkommunikation und automatisiert organisatorische Abläufe. Yuuki ist erweiterbar konzipiert und kann problemlos um zusätzliche Shop-, Verwaltungs- oder Server-Funktionen ergänzt werden.
 
-Slash Command Grund Gerüst | Fertig
-Accept / Decline Button | In Arbeit
-Log Requests | Open
-Notify User who Requestet | Open
+## Tech Stack
+
+- Sprache: Python 3.10.11
+- Discord API Wrapper: Pycord
+- Architektur: Modular (Cogs-basiert)
+- Interaktionssystem: Slash Commands, Buttons, Modals
+- Datenspeicherung: SQLite / MySQL
+- Hosting: Linux-Server mit Docker
+- Versionskontrolle: Git & GitHub
+- Konfiguration: Umgebungsvariablen (.env) & JSON-Datei
