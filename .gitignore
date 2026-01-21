@@ -9,3 +9,4 @@ share/
 *.pyo
 pyvenv.cfg
 Scripts/
+.env
