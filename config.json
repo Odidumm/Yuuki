@@ -10,10 +10,28 @@
 
   "ActivityType": "watching",
   "ActivityStatus": "online",
-  "ActivityText": "for ?help",
-  "prefix": "?",
+  "ActivityText": "for y.help",
+  "prefix": "y.",
 
   "debug_guild_id": "1458827831688560896",
   "log_channel_id": "1463227880007012404",
-  "farm_channel_id": "1463232710418895032"
+  "farm_channel_id": "1463232710418895032",
+  "item_stock_channel_id": "1464983537068281918",
+
+  "staff_role_ids": [
+    "1458827832187683021",
+    "1458827832150065345",
+    "1462222805855633490"
+  ],
+
+  "status_mapping": {
+    "pending": "⏳ Ausstehend",
+    "open": "🟢 Offen",
+    "in_progress": "🟡 In Bearbeitung",
+    "done": "🔴 Abgeschlossen",
+    "declined": "⚫ Abgelehnt",
+    "unknown": "⚪ Unbekannt"
+  },
+
+  "db_path": "data/yuuki.db"
 }
