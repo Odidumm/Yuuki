@@ -68,9 +68,6 @@ class ShopCog(commands.Cog):
             ephemeral=True
         )
 
-    # -----------------------------------
-    # Eigene Anfragen anzeigen
-    # -----------------------------------
     myrequests = SlashCommandGroup(
         "myrequests",
         "Zeige deine Anfragen"
@@ -186,9 +183,6 @@ def setup(bot):
     bot.add_cog(ShopCog(bot))
     logger.log("ShopCog cog loaded.", LogTypes.SYSTEM)
 
-# -----------------------------------
-# Modal
-# -----------------------------------
 class RequestModal(Modal):
     def __init__(self, bot, user, log_channel_id, farm_channel_id):
         super().__init__(title="Ressourcen Anfrage")
