@@ -16,20 +16,12 @@ with open("config.json", "r", encoding="utf-8") as f:
 
 STATUS_MAPPING = config.get("status_mapping", {})
 
-
-# -------------------------------
-# Checks
-# -------------------------------
 def is_staff():
     async def predicate(ctx):
         staff_roles = [int(r) for r in config["staff_role_ids"]]
         return any(role.id in staff_roles for role in ctx.author.roles)
     return commands.check(predicate)
 
-
-# -------------------------------
-# Formatter
-# -------------------------------
 def format_status(status: str) -> str:
     return STATUS_MAPPING.get(status, status)
 
@@ -51,10 +43,6 @@ async def format_assigned_to(bot, value: Optional[str]) -> str:
     except Exception:
         return value
 
-
-# -------------------------------
-# DM Notification
-# -------------------------------
 async def notify_request_owner(
     bot,
     request_row,

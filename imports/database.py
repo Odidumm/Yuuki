@@ -10,9 +10,6 @@ class Database:
         self.db_path = db_path
         self.connection: sqlite3.Connection | None = None
 
-    # -------------------------------
-    # Verbindung öffnen
-    # -------------------------------
     def connect(self):
         try:
             self.connection = sqlite3.connect(
@@ -25,18 +22,12 @@ class Database:
             logger.log(f"Error connecting to database: {e}", LogTypes.ERROR)
             raise
 
-    # -------------------------------
-    # Verbindung schließen
-    # -------------------------------
     def close(self):
         if self.connection:
             self.connection.close()
             self.connection = None
             logger.log("Database connection closed.", LogTypes.INFO)
 
-    # -------------------------------
-    # Tabellen erstellen
-    # -------------------------------
     def create_tables(self):
         try:
             cursor = self.connection.cursor()
@@ -60,9 +51,6 @@ class Database:
             logger.log(f"Error creating tables: {e}", LogTypes.ERROR)
             raise
 
-    # -------------------------------
-    # Zentrale Execute-Hilfe
-    # -------------------------------
     def execute(self, query: str, params: tuple = (), commit: bool = False):
         try:
             cursor = self.connection.cursor()
@@ -74,9 +62,6 @@ class Database:
             logger.log(f"Database query error: {e}", LogTypes.ERROR)
             raise
 
-    # -------------------------------
-    # Request erstellen
-    # -------------------------------
     def create_request(self, user_id: str, request_text: str) -> int:
         cursor = self.execute(
             """
@@ -93,4 +78,3 @@ class Database:
             LogTypes.SUCCESS
         )
         return request_id
-    # -------------------------------

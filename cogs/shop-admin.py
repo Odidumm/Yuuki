@@ -19,9 +19,6 @@ class ShopAdminCog(commands.Cog):
         self.bot = bot
         logger.log("ShopAdminCog initialized.", LogTypes.SYSTEM)
 
-    # -----------------------------------
-    # Slash Command: Update Request
-    # -----------------------------------
     @commands.slash_command(
         name="updaterequest",
         description="Aktualisiere eine Anfrage (Admin)"
@@ -54,7 +51,6 @@ class ShopAdminCog(commands.Cog):
 
         updates = {field: new_value}
 
-        # Auto completed_at
         if field == "status" and new_value == "done":
             updates["completed_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -66,7 +62,6 @@ class ShopAdminCog(commands.Cog):
                     commit=True
                 )
 
-            # DM an User
             await yh.notify_request_owner(
                 self.bot,
                 req,
@@ -122,9 +117,6 @@ class ShopAdminCog(commands.Cog):
                 LogTypes.ERROR
             )
 
-    # -----------------------------------
-    # Helper
-    # -----------------------------------
     @staticmethod
     def _error_embed(message: str) -> discord.Embed:
         return discord.Embed(

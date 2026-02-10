@@ -24,7 +24,7 @@ Yuuki dient als Shop-Management- und Support-System für einen Minecraft-Server.
 - Discord API Wrapper: Pycord
 - Architektur: Modular (Cogs-basiert)
 - Interaktionssystem: Slash Commands, Buttons, Modals
-- Datenspeicherung: SQLite / MySQL
+- Datenspeicherung: SQLite
 - Hosting: Linux-Server mit Docker
 - Versionskontrolle: Git & GitHub
 - Konfiguration: Umgebungsvariablen (.env) & JSON-Datei
